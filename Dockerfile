@@ -9,4 +9,4 @@ EXPOSE 10000
 
 ENTRYPOINT ["/bin/sh", "-c"]
 
-CMD ["export OLLAMA_HOST=0.0.0.0:${PORT:-10000}; ollama serve & until ollama list >/dev/null 2>&1; do sleep 2; done; ollama pull qwen2.5:0.5b-instruct-q2_k; wait"]
+CMD ["export OLLAMA_HOST=0.0.0.0:${PORT:-10000}; ollama serve & until ollama list >/dev/null 2>&1; do sleep 2; done; ollama pull qwen2.5:0.5b-instruct-q2_K; wait"]
